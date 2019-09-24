@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Browser_Survey_Form.css" media="screen"/>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    </header>
+    <div id="form">
+    <p id="description">What browser do you like to use the most?</p>
+    <form id="survey-form" method="GET">
+      <div class="rowTab">
+        <div class="labels">
+      <label id="name-label" for="name">Name:</label>
+        </div>
+        <div class="rightTab">
+          <input autofocus name="name" id="name" type="text" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label"> Email: 
+          </label>
+        </div>
+        <div class="rightTab">
+          <input name="email" id="email" type="email" class="input-field" placeholder="Enter your Email" required>
+        </div>
+       </div>
+       <div class="rowTab">
+         <div class="labels">
+            <label id="number-label">Student Number: 
+            </label>
+         </div>
+         <div class="rightTab">
+        <input name="student number" id="number" type="number" min="100" max="1000" class="input-field" placeholder="Number" required>
+         </div>
+       </div>
+       <div class="rowTab">
+         <div class="labels">
+            <label for="browsers" id="list_dropdown"> Browser: 
+            </label>
+         </div>   
+         <div class="rightTab">
+           <input name="browsers" id="browsers" list="dropdown" class="dropdown-list" placeholder="Pick your browser" required> 
+          <datalist id="dropdown">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+           </datalist>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="radio-buttons" for="gender">Select your gender:
+            </label>
+          </div>
+        <div class="rightTab">
+          <ul id="gender" style="list-style: none;">
+            <li class="radio"><label><input type="radio" name="gender" value="Male" class="gender">Male</label></li>
+            <li class="radio"><label><input type="radio" name="gender" value="Female" calss="gender">Female</label</li>
+            <li class="radio"><label><input type="radio" name="gender" value="Other" class="gender">Other</label></li> 
+           </ul>
+         </div>      
+       </div>
+       <div class="rowTab">
+         <div class="labels">
+           <label id="radio_b_ethnicity" for="ethnicity">Select your ethnicity:</label>
+         </div>
+         <div class="rightTab">
+            <input name="ethnicity" id="pick-ethnicity" list="ethnicity" class="dropdown-list" placeholder="Pick your ethnicity" required> 
+        <datalist id="ethnicity">
+           <option value="White"></option>
+           <option value="Black"></option>
+           <option value="Hispanic"></option>
+           <option value="Other"></option>
+        </datalist>
+       </div> 
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+         <label id="checkbox_b_age" for="age">Select your age:</label>
+      </div>
+      <div class="rightTab">
+        <ul>
+          <li class="checkbox"><label><input type="checkbox" name="age" value="7-18" class="age">7-18</label</li>
+          <li class="checkbox"><label><input type="checkbox" name="age" value="18-25" class="age">18-25</label</li>
+          <li class="checkbox"><label><input type="checkbox" name="age" value="25-30" class="age">25-30</label</li>
+        <li class="checkbox"><label><input type="checkbox" name="age" value="30-50" class="age">30-50</label</li>
+          <li class="checkbox"><label><input type="checkbox" name="age" value="50-70" class="age">50-70</label</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab>">
+        <div class="labels">
+          <label for="comments">Additional comments:</label>
+        </div>
+        <div class="rightTab">
+           <textarea id="comments" name="comment" class="input-field" row="200" cols="40" placeholder="Additional comments"></textarea>
+        </div>
+      </div>   
+          
+      <button id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+   </div>
+  </body>
+</html>
